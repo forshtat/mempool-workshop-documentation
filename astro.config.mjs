@@ -13,17 +13,12 @@ export default defineConfig({
 			plugins: [starlightLlmsTxt()],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/forshtat/mempool-workshop-documentation' }],
 			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
-				},
+				{ label: 'Start here', items: [{ autogenerate: { directory: 'start' } }] },
+				{ label: 'Concepts', items: [{ autogenerate: { directory: 'concepts' } }] },
+				{ label: 'Rules', items: [{ autogenerate: { directory: 'rules' } }] },
+				{ label: 'Guides', items: [{ autogenerate: { directory: 'guides' } }] },
+				{ label: 'Reference', items: [{ autogenerate: { directory: 'reference' } }] },
+				{ label: 'Project', items: [{ autogenerate: { directory: 'project' } }] },
 			],
 		}),
 	],

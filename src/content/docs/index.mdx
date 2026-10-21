@@ -5,10 +5,44 @@ template: splash
 hero:
   tagline: Documentation for Alternative Mempools for EIP-8141 Frame Transactions.
   actions:
+    - text: What are Alternative Mempools
+      link: /start/what-are-alternative-mempools/
+      icon: right-arrow
+    - text: Quickstart
+      link: /guides/quickstart/
+      icon: rocket
+      variant: minimal
     - text: Landing page
       link: https://altmempool.wtf
       icon: external
       variant: minimal
 ---
 
-This site is under construction.
+> Disclaimer: Content created from source code using generative AI. Contact us for clarifications or if you find mistakes in this document.
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+EIP-8141's public mempool says no to almost everything that needs real validation logic. ERC-8421 lets nodes say yes, by pricing abuse with stake and reputation instead of banning whole features.
+
+<CardGrid>
+	<Card title="Start here" icon="open-book">
+		The problem, the three kinds of mempool and a [glossary](/start/glossary/).
+	</Card>
+	<Card title="Concepts" icon="puzzle">
+		[Frame Transactions](/concepts/frame-transactions/), [stake](/concepts/entities-and-stake/), [reputation](/concepts/reputation/) and the [architecture](/concepts/architecture/).
+	</Card>
+	<Card title="Rules" icon="document">
+		Every ERC-8421 rule by [ID](/rules/), such as [BUDGET-010](/rules/budget/#budget-010).
+	</Card>
+	<Card title="Guides" icon="rocket">
+		[Quickstart](/guides/quickstart/), [run the sidecar](/guides/run-the-sidecar/), [stake an entity](/guides/staking/) and [read admission reports](/guides/admission-reports/).
+	</Card>
+	<Card title="Reference" icon="setting">
+		[RPC methods](/reference/rpc-methods/), [configuration](/reference/configuration/), [CLI](/reference/cli/) and the [explorer API](/reference/explorer-api/).
+	</Card>
+	<Card title="Project" icon="external">
+		[Links](/project/links/), and [known differences](/project/differences/) between sources, marked (TBD).
+	</Card>
+</CardGrid>
+
+ERC-8421 is a draft. Rules and constants may change.
