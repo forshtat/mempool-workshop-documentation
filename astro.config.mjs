@@ -8,8 +8,8 @@ export default defineConfig({
 	site: 'https://docs.altmempool.wtf',
 	integrations: [
 		starlight({
-			title: 'Alt Mempool Docs',
-			description: 'Documentation for alternative mempools for EIP-8141 Frame Transactions.',
+			title: 'Alternative Mempools',
+			description: 'Documentation for Alternative Mempools for EIP-8141 Frame Transactions.',
 			plugins: [starlightLlmsTxt()],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/forshtat/mempool-workshop-documentation' }],
 			sidebar: [
